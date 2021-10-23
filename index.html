@@ -1,0 +1,31 @@
+<!-- Callbacks -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="changeTotal.js"></script>
+  <script src="inputHandler.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <button name="open-modal" type="button">OPEN</button>
+  <div class="modal">
+    <form>
+      <input type="email" required placeholder="Digite seu email"/>
+      <input id= "name" type="text" required placeholder="Digite seu Nome"/>
+      <input id="lastName" type="text" required placeholder="Digite seu Sobrenome"/>
+      <div class="button-container">
+        <button type="button" onclick="operateModal.cancel()">CANCEL</button>
+        <button type="submit">OK</button>
+      </div>
+    </form>
+  </div>
+ <script src="index.js"></script>
+</body>
+
+</html>
