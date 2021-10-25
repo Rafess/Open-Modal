@@ -1,5 +1,4 @@
 const buttonOpen = document.querySelector('button[name="open-modal"]');
-const OPEN = "--is-open"
 buttonOpen.onclick = function () {
     operateModal.open({
     cancel: () => {
@@ -13,11 +12,13 @@ buttonOpen.onclick = function () {
  const operateModal = (function(){
     let _cancelFn;
     let _okFn;
-    let _modal = document.querySelector('.modal');
-    let _form = document.querySelector('.modal form');
-    let _inputEmail = document.querySelector('.modal input[type="email"]');
-    let _inputName = document.querySelector('.modal input[id="name"]');
-    let _inputLastName = document.querySelector('.modal input[id="lastName"]');
+    const _modal = document.querySelector('.modal');
+    const _form = document.querySelector('.modal form');
+    const _inputEmail = document.querySelector('.modal input[type="email"]');
+    const _inputName = document.querySelector('.modal input[id="name"]');
+    const _inputLastName = document.querySelector('.modal input[id="lastName"]');
+    const OPEN = "--is-open";
+
 
     function formReset() {
         _form.reset();
